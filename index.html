@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./javascript/script.js"></script>
+    <title>reto oracle one</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="section_text-in">
+        <header class="container_logo">
+          <img src="./imagenes/Vector.png" alt="logo" class="logo" />
+        </header>
+        <textarea
+          class="text-in"
+          id="text-in"
+          cols="35"
+          rows="10"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+        <div class="text-condicion">
+          <h6>
+            <img src="./imagenes/icono.png" alt="icono" /> Solo letras
+            minúsculas y sin acentos
+          </h6>
+        </div>
+        <div class="section_btn">
+          <button
+            class="buttons btn-encriptar"
+            id="encriptar"
+            onclick="encriptar()"
+          >
+            encriptar
+          </button>
+          <button
+            class="buttons btn-desencriptar"
+            id="desencriptar"
+            onclick="desencriptar()"
+          >
+            desencriptar
+          </button>
+        </div>
+      </section>
+
+      <section class="section_text-out">
+        <img
+          src="./imagenes/imagen1.png"
+          alt="imagen"
+          id="imaderecha"
+          class="imagen"
+        />
+        <h3 id="text-derecho">Ningún mensaje fue encontrado</h3>
+        <textarea
+          id="texto_ou"
+          cols="20"
+          rows="10"
+          class="text-out"
+          placeholder="Ingresa el texto que desees encriptar o desencriptar."
+        ></textarea>
+        <div id="container-button" class="section_btn-copy">
+          <button
+            class="buttons btn-copy"
+            id="copiar"
+            onclick="copyDocument(),limpiarTextarea()"
+          >
+            copiar
+          </button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

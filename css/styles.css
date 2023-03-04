@@ -1,0 +1,196 @@
+/* variables */
+:root {
+  font-size: 62.5%;
+  --color-Principar: #e5e5e5;
+  --color-bt-1: #0a3871;
+  --color-bt-2: #d8dfe8;
+  --color-font: #0a3871;
+}
+/* reset  */
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.container {
+  background: var(--color-Principar);
+  width: 100vw;
+
+  display: flex;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* contenido de lado izquierdo */
+/* ------------------------------------------------ */
+.container_logo {
+  background: var(--color-Principar);
+  text-align: left;
+  height: 5rem;
+}
+
+.logo {
+  width: 3rem;
+  display: block;
+  margin: 0 1rem;
+}
+
+.section_text-in {
+  background-color: var(--color-Principar);
+  width: 70%;
+}
+
+.text-in {
+  background: var(--color-Principar);
+  margin: 8rem auto 2rem;
+  border: 0;
+  outline: none;
+  resize: none;
+  text-transform: lowercase;
+}
+
+.section_btn {
+  background: var(--color-Principar);
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  width: 12em;
+  height: 3em;
+  border-radius: 1.2em;
+  padding: 0 1.2em;
+  border: var(--color-bt-1) solid 0.2rem;
+}
+.buttons:active {
+  color: #e5e5e5;
+  background: #5f6b6d;
+}
+
+.btn-encriptar {
+  background: var(--color-bt-1);
+  margin-right: 3rem;
+}
+
+.btn-desencriptar {
+  background: var(--color-bt-2);
+  margin-left: 3rem;
+}
+
+.text-condicion h6 {
+  margin: 2rem;
+  padding: auto;
+  font-size: 1.2rem;
+}
+
+/* contenido lado derecho */
+/* ------------------------------------------------ */
+
+.section_text-out {
+  background-color: white;
+  width: 30%;
+  border-radius: 4.5rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.imagen {
+  width: 70%;
+  margin: 2rem auto 0;
+}
+
+.section_text-out h3 {
+  margin: 1rem 0;
+}
+
+.text-out {
+  width: 90%;
+  text-align: center;
+  border: 0;
+  outline: none;
+  resize: none;
+  margin-top: 2rem;
+}
+
+.section_btn-copy {
+  margin-top: 18.3rem;
+  margin-bottom: 3rem;
+  background: white;
+  display: none;
+}
+
+/* responsive para mobil */
+/* ------------------------------------------------ */
+
+@media (max-width: 768px) {
+  .container {
+    display: block;
+    padding: 1rem;
+  }
+
+  .section_text-in {
+    width: auto;
+  }
+
+  .text-in {
+    width: 90vw;
+  }
+  .section_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-encriptar {
+    margin: 0;
+  }
+  .btn-desencriptar {
+    margin: 0;
+  }
+
+  .section_text-out {
+    width: auto;
+    padding: 2rem 0;
+  }
+
+  .imagen {
+    display: none;
+  }
+
+  .text-out {
+    width: 90%;
+  }
+
+  .section_btn-copy {
+    margin: 0 auto;
+  }
+
+  .section_text-out h3 {
+    padding: 0 1rem;
+  }
+  .btn-copy {
+    margin: 0 auto;
+  }
+}
+
+/* responsive para table */
+/* ------------------------------------------------ */
+
+@media (max-width: 810px) {
+  .buttons {
+    font-size: 1.6rem;
+    width: 9em;
+    height: 3en;
+  }
+  .btn-encriptar {
+    margin: 0;
+  }
+  .btn-desencriptar {
+    margin: 0;
+  }
+
+  .btn-copy {
+    margin-top: 1rem;
+  }
+}
